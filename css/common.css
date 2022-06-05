@@ -125,8 +125,8 @@ margin-right: 50px;
     color: var(--color-acent);
 }
 
-/* ===== Иконки перед контактами ====== */
-.nav-contacts > li::before{
+/* ===== Иконки перед контактами  Вариант через ::before/after====== */
+/* .nav-contacts > li::before{
     content: "";
     display: inline-flex;
     width: 16px;
@@ -142,6 +142,25 @@ margin-right: 50px;
 .icon-envelop::before {background-image: url(../images/envelope-hover.svg);}
 
 .icon-mobile::before {background-image: url(../images/phone-hover.svg);}
+ */
+
+/* ===== Иконки перед контактами  Вариант через SVG  ====== */
+.nav-contacts a {
+    display: flex;
+}
+
+
+.icon {
+    margin-right: 10px;
+    fill: var(--main-text-color);
+    
+}
+
+.nav-contacts li:hover .icon{
+    fill: var(--color-acent);
+}
+
+
 
 /* ================================      Футер          ====================================== */
 footer {
