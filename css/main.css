@@ -337,32 +337,50 @@ margin-bottom: 16px;
 }
 
 /* =============================== Секция Постоянные клиенты ==================================  */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* === Заголовок Клиенты ============ */
 .clients-title {
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 
 /* ======= Список компаний =========== */
 .clients-list {
     display: flex;
-    text-align: center;
-    padding-bottom: 94px;
 }
 
 /* ==== Ссылки на компании  ========== */
 .clients a {
-    display: block;
+    display: flex;
     text-decoration: none;
     width: 170px;
     height: 90px;
-    background: var(--secondary-bg-color);
-    padding-top: 35px;
+    background: var(--main-bg-color);
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.icon-clients {
+    fill: var(--team-social-icons);
 }
 
 .clients-list > li:not(:last-child) {
     margin-right: 30px;
 }
 
+.clients a:hover,
+.clients a:focus {
+    border: 1px solid #2196F3;
+}
+
+.clients a:hover svg,
+.clients a:focus svg {
+    fill: var(--color-acent);
+}
 
 
