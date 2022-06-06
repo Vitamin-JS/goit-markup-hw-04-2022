@@ -106,9 +106,6 @@
 
 
 /* === Блок - Фон иконок в Преимуществах ---- Вариант №3 - через SVG  =======*/
-
-
-
 .icon-advantage {
     padding-left: 100px;
     padding-right: 100px;
@@ -118,16 +115,6 @@
     background-color: var(--secondary-bg-color);
     
 }
-
-
-
-
-
-
-
-
-
-
 
 /* =====  Margin внизу всей секции  ==========*/
 .advantage {
@@ -255,7 +242,7 @@ text-align: center;
 margin-bottom: 16px;
 }
 
-/* ========= Соцсети иконки  Вариант №1 ====================== */
+/* ========= Соцсети иконки  Вариант №1 картинки через background-image====================== */
 /* .team-social a {
     display: block;
     text-decoration: none;
@@ -274,9 +261,9 @@ margin-bottom: 16px;
 
 .icon-linedin {background-image: url(../images/linkedin.svg);} */
 
-/* ========= Соцсети иконки  Вариант №2 ====================== */
+/* ========= Соцсети иконки  Вариант №2 картинки через ::after ====================== */
 
-.team-social a::after {
+/* .team-social a::after {
     content: "";
     display: block;
     width: 44px;
@@ -292,7 +279,34 @@ margin-bottom: 16px;
 
 .item-fb a::after {background-image: url(../images/facebook.svg);}
 
-.item-linkedin a::after {background-image: url(../images/linkedin.svg);} 
+.item-linkedin a::after {background-image: url(../images/linkedin.svg);}  */
+
+
+/* ========= Соцсети иконки  Вариант №3 картинки через SVG ====================== */
+.team-social a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(----main-bg-color);
+}
+
+.icon-svg {
+    fill: var(--team-social-icons);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.team-social > li:hover .icon-svg {
+    fill: var(--main-bg-color);
+}
+
+.team-social a:hover,
+.team-social a:focus{
+    background-color: var(--color-acent);
+}
 
 
 /* ==== Карточка команды- Li */

@@ -13,6 +13,7 @@
     --secondary-bg-color: #F5F4FA; 
     --footer-bg-color: #2F303A;
     --footer-grey-text: rgba(255, 255, 255, 0.6);
+    --team-social-icons: #AFB1B8;
 }
 
 /* html{ box-sizing: border-box;}  этот стиль есть в Normalize-min */
