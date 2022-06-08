@@ -312,8 +312,12 @@ border-radius: 50%;}
 }
 
 /* ======= Кнопка ПОДПИСАТЬСЯ в футере   ============= */
+/* === Стили кнопки -:after работает только при display: flex; ======================     !!!     */
 .footer-btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -330,5 +334,14 @@ border-radius: 50%;}
 
 .input-deco {
     display: flex;
+}
+
+.footer-btn::after {
+    content: " ";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/SVG-for-sprite/icon-send.svg);
+    background-size: contain;
+    margin-left: 10px;
 }
 /* Тест из конспекта */
