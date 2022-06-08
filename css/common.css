@@ -12,8 +12,9 @@
     --main-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA; 
     --footer-bg-color: #2F303A;
-    --footer-grey-text: rgba(255, 255, 255, 0.6);
     --team-social-icons: #AFB1B8;
+    --footer-grey-text: rgba(255, 255, 255, 0.6);
+    --footer-social-bg: rgba(255, 255, 255, 0.1);  
 }
 
 /* html{ box-sizing: border-box;}  этот стиль есть в Normalize-min */
@@ -33,7 +34,7 @@ h1,h2,h3,h4,h5,h6, p {
     margin: 0;
 }
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -217,7 +218,7 @@ footer {
     margin-bottom: 20px;
 }
 
-/* ======= Ссылки на соцсети в футере  Variant #1  ============= */
+/* ======= Ссылки на соцсети в футере  Variant #1  =============================================== */
 /* .foter-social a{
     display: block;
     text-decoration: none;
@@ -241,9 +242,8 @@ footer {
     margin-right: 10px;
 } */
 
-/* ======Ссылки на соцсети в футере  Variant #2 не работает с :hover ===*/
-
-.icon-foot >a::after {
+/* ====== Ссылки на соцсети в футере  Variant #2 не работает с :hover ================================*/
+/* .icon-foot >a::after {
 content: "";
 display: block;
 width: 44px;
@@ -252,22 +252,45 @@ height: 44px;
 background-repeat:no-repeat;
 background-position: 50% 50%;
 background-color: rgba(255, 255, 255, 0.1);
-border-radius: 50%;
+border-radius: 50%;}
 
-}
 
-.foot-list {
-    display: flex;
-}
 
 .insta a::after {background-image: url(../images/instagram-2.svg);}
 .twiter a::after {background-image: url(../images/twitter-2.svg);}
 .fb a::after{background-image: url(../images/facebook-2.svg);}
-.linkedin a::after{background-image: url(../images/linkedin-1.svg);}
+.linkedin a::after{background-image: url(../images/linkedin-1.svg);} */
+
+/* ===== Ссылки на соцсети в футере Variant #3 через SVG  ========================================*/
+.foot-list {
+    display: flex;
+}
+
+.icon-foot-svg {
+    fill: var(--main-bg-color);
+    width: 20px;
+    height: 20px;
+}
+
+.icon-foot a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-social-bg);
+    border-radius: 50%;
+}
 
 .icon-foot:not(:last-of-type) {
     margin-right: 10px;
 }
+
+.icon-foot a:hover,
+.icon-foot a:focus {
+    background-color: var(--color-acent);
+}
+
 
 /* ======= Поле ввода E-mail в футере   ============= */
 .footer-action {
