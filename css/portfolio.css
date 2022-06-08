@@ -3,7 +3,7 @@ header {
 }
    
 
-/* ====================== Кнопки-филтры ============================= */
+/* ====================== Кнопки-фильтры ============================= */
 /* ========== Блок с кнопками ========= */
 .filter .list {
     display: flex;
@@ -42,6 +42,8 @@ header {
 .filter-list button:hover,
 .filter-list button:focus {
     background: var(--color-acent);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 /* =================== Примеры работ ================================= */
@@ -65,7 +67,6 @@ header {
 .jobs a {
     display: inline-block;
     text-decoration: none;
-    
 }
 
 .jobs-list li:nth-last-child(-n+3) {
@@ -78,13 +79,11 @@ header {
 }
 
 /* ==== Контейнер Названия и типа проекта=== */
-
 .descr {
     padding: 20px 24px;
     border-right: 1px solid #EEEEEE ;
     border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    
+    border-left: 1px solid #EEEEEE;   
 }
 
 /* ======== Название проекта=========== */
@@ -115,4 +114,9 @@ header {
     height: 294px;
 
     padding: 63px 24px;
+}
+
+/*  ====  Hover на карточку работ ======== */
+.jobs-card:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
